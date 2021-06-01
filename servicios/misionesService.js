@@ -29,7 +29,7 @@ class MisionesService {
     }
 
     async deleteMision( misionId ){
-        const misionBorradaId = await this.mongoDB.borrarTarea(this.collection, misionId);
+        const misionBorradaId = await this.mongoDB.deleteMision(this.collection, misionId);
         return misionBorradaId || [];
     }    
 }

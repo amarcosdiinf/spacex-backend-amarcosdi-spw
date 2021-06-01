@@ -51,6 +51,7 @@ function misionesApi(app) {
         }
     })
 
+    // No se utiliza pero se implementa igualmente.
     router.put('/:misionId', async function (req, res, next) {
         const  {misionId}  = req.params;
         const  nuevaMision  = req.body; 
